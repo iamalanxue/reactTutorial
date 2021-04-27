@@ -1,9 +1,5 @@
 import React from 'react';
-import { 
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View } from 'react-native';
+import { StyleSheet, View, TouchableOpacity, Text } from 'react-native';
 
 const TermButton = ({term, isActive, setSelectedTerm}) => (
     <TouchableOpacity 
@@ -20,8 +16,8 @@ const TermButton = ({term, isActive, setSelectedTerm}) => (
           <TermButton 
             key={term} 
             term={term} 
-            isActive={term==selectedTerm}
-            setSelectedTerm={setSelectedTerm}
+            isActive={term === selectedTerm}
+            setSelectedTerm = {setSelectedTerm}
         />
         ))
       }

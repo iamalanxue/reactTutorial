@@ -1,9 +1,7 @@
 import Course from './Course';
-import termSelector from './termSelector';
 import React, { useState } from 'react';
-import { ScrollView, StyleSheet, View } from 'react-native';
-import TermSelector from './termSelector';
-import { getCourseNumber, getCourseTerm, hasConflict, terms } from '../utils/course.js';
+import { StyleSheet, View } from 'react-native';
+import { hasConflict } from '../utils/course.js';
 
 const CourseSelector = ({courses}) => {
     const [selected, setSelected] = useState([]);
